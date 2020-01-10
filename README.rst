@@ -4,7 +4,11 @@ Brendel & Bethge attack
 
 This repo contains a few short examples on how to use the `adversarial attacks by Brendel & Bethge <https://arxiv.org/abs/1907.01003>`_ which have been published at NeurIPS 2019 and are state-of-the-art on several Lp metrics (L0, L1, L2, L-infinity).
 
-The reference implementation is available in `Foolbox-Native <https://github.com/jonasrauber/foolbox-native>`_. We build a thin wrapper, called `CleverFool <https://github.com/wielandbrendel/cleverfool>`_, to make the attack also available in CleverHans.
+The reference implementation is available in `Foolbox-Native <https://github.com/jonasrauber/foolbox-native>`_. We build a thin wrapper, called `CleverFool <https://github.com/wielandbrendel/cleverfool>`_, to make the attack also available in CleverHans. The wrapper can be installed with
+
+.. code-block:: python
+
+   pip install cleverfool
 
 Usage notes
 -----------
