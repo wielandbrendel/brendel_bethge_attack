@@ -26,7 +26,7 @@ A solution to this problem is to give suitable starting points by choosing other
   batches = [(images[:10], labels[:10]), (images[10:], labels[10:])]
 
   # create attack that picks adversarials from given dataset of samples
-  init_attack = fbn.attacks.PrecomputedSamplesAttack(fmodel)
+  init_attack = fbn.attacks.DatasetAttack(fmodel)
 
   # feed clean data into the pseudo-attack (in most applications, especially in targeted 
   # scenarios, you will need to feed many batches)
