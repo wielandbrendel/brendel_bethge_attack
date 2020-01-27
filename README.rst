@@ -15,7 +15,7 @@ Usage notes
 
 Please follow the runnable and concise examples in the notebooks to see Brendel & Bethge attacks in action. There is only one subtlety one might want to take care of: the Brendel & Bethge attacks need a starting point that is already adversarial (but might be very far away from the clean image). By default the Brendel & Bethge employs a gradient-free noise attack if no starting points are given. However, sometimes this noise attack might fail to find an adversarial, thus making the rest of the attack fail as well.
 
-A solution to this problem is to give suitable starting points by choosing other clean samples from the data set. To make this easy Foolbox-Native implements an attack call PrecomputedSamplesAttack. This pseudo-attack is initialised by passing several batches of clean data from which it then chooses suitable starting images without any further user intervention. Below you find a minimal example (also available in full in the Jupyter notebooks).
+A solution to this problem is to give suitable starting points by choosing other clean samples from the data set. To make this easy Foolbox-Native implements an attack call DatasetAttack. This pseudo-attack is initialised by passing several batches of clean data from which it then chooses suitable starting images without any further user intervention. Below you find a minimal example (also available in full in the Jupyter notebooks).
 
 .. code-block:: python
 
